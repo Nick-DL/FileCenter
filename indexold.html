@@ -1,5 +1,4 @@
-﻿
-<!doctype html>
+﻿<!doctype html>
 <html lang="zh-cmn-Hans">
   <head>
     <meta charset="utf-8">
@@ -7,24 +6,100 @@
     <meta name="renderer" content="webkit"/>
     <meta name="force-rendering" content="webkit"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-
-    <!-- MDUI CSS -->
     <link rel="stylesheet" href="/css/mdui.min.css"/>
-    <title>文件中转站</title>
+    <title>FileCenter</title>
   </head>
-  <body>
-<div class="mdui-typo">
-    <h1>onlyfortest</h1>
-<h2>文件中转站</h2>
-<p>
-<a href="/s.exe">搜狗输入法</a><br>
-<a href="/h.zip">HarmonyOS Sans</a><br>
-<a href="/c.exe">Chrome</a><br>
-<a href="/GS.Terminal.SmartBoard.rar">GS.Terminal.SmartBoard.rar</a>
-</p>
-<p><small />nickdl presents</small>
-</div>
-    <!-- MDUI JavaScript -->
+  <body class="mdui-loaded mdui-theme-layout-auto">
+    <div class="mdui-appbar mdui-shadow-0">
+      <div class="mdui-toolbar">
+  <a href="/" class="mdui-typo-headline" style="font-weight: 500;">FileCenter</a>
+  <a href="/" class="mdui-typo-title mdui-hidden-xs" style="font-weight: 500;"><small>Only for testing</small></a>
+        <div class="mdui-toolbar-spacer"></div>
+        <a href="/files" class="mdui-btn mdui-btn-icon"></a>
+        <a href="/key.html" class="mdui-btn mdui-btn-icon"></a>
+  <a href="javascript:;" class="mdui-btn mdui-btn-icon" mdui-menu="{target: '#more'}"><i class="mdui-icon material-icons">&#xe5d4;</i></a>
+           <ul class="mdui-menu" id="more"> 
+             <li class="mdui-menu-item" disabled> 
+               <a href="#">关于本站</a> 
+             </li> 
+           </ul>
+      </div>
+    </div>
+  
+    <div class="mdui-container">
+      <div class="mdui-row">
+        <div class="mdui-col-md-6 mdui-col-offset-md-3">
+          <p align="center" class="mdui-typo-display-3" style="color: #0A59F7; font-weight: 700;  ">FileCenter</p>
+        </div>
+        <div class="mdui-col-md-6 mdui-col-offset-md-3">
+          <div class="mdui-card mdui-shadow-0">
+            <div class="mdui-card-primary">
+              <div class="mdui-card-primary-title">当前位于：<select class="mdui-select" mdui-select>
+                <option value="1">一号仓库</option>
+                <option onclick="u2()" value="2" disabled>二号仓库</option>
+              </select></div>
+            </div>
+            <script>
+                function u2() {
+                var link2 = "https://chat2.nickdl.site/";
+                window.location.href = link2;}
+                </script>
+      <div class="mdui-divider"></div>
+  <ul class="mdui-list">
+    <a href="./files/s.exe"><li class="mdui-list-item">
+    <div class="mdui-list-item-content" style="color: #0A59F7; font-weight: 500; ">
+        搜狗输入法
+    </div>
+      <i class="mdui-icon material-icons">&#xe2c4;</i>
+    </li></a>
+
+    <a href="./files/c.exe"><li class="mdui-list-item">
+        <div class="mdui-list-item-content" style="color: #0A59F7; font-weight: 500; ">
+            Chrome
+        </div>
+          <i class="mdui-icon material-icons">&#xe2c4;</i>
+        </li></a>
+    <a href="./files/e.exe"><li class="mdui-list-item">
+        <div class="mdui-list-item-content" style="color: #0A59F7; font-weight: 500; ">
+            Edge
+        </div>
+          <i class="mdui-icon material-icons">&#xe2c4;</i>
+        </li></a>
+        <a href="./files/h.zip"><li class="mdui-list-item">
+            <div class="mdui-list-item-content" style="color: #0A59F7; font-weight: 500; ">
+                HarmonyOS Sans
+            </div>
+              <i class="mdui-icon material-icons">&#xe2c4;</i>
+            </li></a>
+       <a href="./files/GS.Terminal.SmartBoard.rar"><li class="mdui-list-item">
+            <div class="mdui-list-item-content" disabled style="color: #0A59F7; font-weight: 500; ">
+                GS.Terminal.SmartBoard.rar
+            </div>
+              <i class="mdui-icon material-icons">&#xe2c4;</i>
+            </li></a>
+
+  </ul>
+  
+          </div>
+  <p/>
+        </div>
+      </div>
+    </div><p></p>
+       <div class="footer-nav mdui-color-grey-200"> 
+         <div class="mdui-container"> 
+           <div class="mdui-row"> 
+             <div class="mdui-col-sm-12">  
+               <div class="intro mdui-typo"> 
+                 <p></p> 
+                 <p>©Copyright by Nick_DL 2022-2024. All rights reserved.</p><p></p> 
+                 <p>10.37.121.24 -> 10.37.121.124 -> 10.37.121.204</p>
+                 <p></p>
+               </div> 
+             </div> 
+           </div> 
+         </div> 
+       </div>
     <script src="/js/mdui.min.js"></script>
+  <style>body {background-color: #f1f3f5;}</style>
   </body>
 </html>

@@ -7,7 +7,38 @@
     <meta name="force-rendering" content="webkit"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <link rel="stylesheet" href="/css/mdui.min.css"/>
+    <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
     <title>FileCenter</title>
+    <style type="text/css">
+      .mdui-card { border-radius: 18px; }
+      .mdui-btn-block { border-radius: 12px; }
+      .mdui-btn { border-radius: 12px; }
+      .mdui-menu-open { border-radius: 12px;
+        box-shadow: 0 10px 20px 0 rgba(0,0,0,.22);  }
+      .mdui-menu-closing { border-radius: 12px;
+        box-shadow: 0 10px 20px 0 rgba(0,0,0,.22);  }
+      .mdui-tooltip { border-radius: 6px; }
+      .mdui-table-fluid { border-radius: 12px; }
+      .mdui-panel-item { border-radius: 12px; }
+    
+      @media (prefers-color-scheme: dark) {
+        .mdui-btn-icon svg use {
+          fill: white !important;
+        }
+  
+        .mdui-color-yellow-100 {
+          background-color: #827717 !important;
+        }
+    
+        .mdui-color-grey-100 {
+          background-color: #616161 !important;
+        }
+  
+        .text-color-changing {
+          color: #ffffff !important;
+        }
+      }
+    </style>
   </head>
   <body class="mdui-loaded mdui-theme-layout-auto">
     <div class="mdui-appbar mdui-shadow-0">
@@ -15,11 +46,13 @@
   <a href="/" class="mdui-typo-headline" style="font-weight: 500;">FileCenter</a>
   <a href="/" class="mdui-typo-title mdui-hidden-xs" style="font-weight: 500;"><small>Only for testing</small></a>
         <div class="mdui-toolbar-spacer"></div>
-        <a href="/key.html" class="mdui-btn mdui-btn-icon"></a>
-  <a href="javascript:;" class="mdui-btn mdui-btn-icon" mdui-menu="{target: '#more'}"><i class="mdui-icon material-icons">&#xe5d4;</i></a>
+  <button class="mdui-btn mdui-btn-icon" mdui-menu="{target: '#more'}"><i class="mdui-icon material-icons">&#xe5d4;</i></button>
            <ul class="mdui-menu" id="more"> 
-             <li class="mdui-menu-item" disabled> 
-               <a href="#">关于本站</a> 
+            <li class="mdui-menu-item">
+              <a href="/indexold.html">旧版主页</a>
+            </li>
+             <li class="mdui-menu-item"> 
+               <a href="/about">关于本站</a> 
              </li> 
            </ul>
       </div>
@@ -38,11 +71,6 @@
                 <option onclick="u2()" value="2" disabled>二号仓库</option>
               </select></div>
             </div>
-            <script>
-                function u2() {
-                var link2 = "https://chat2.nickdl.site/";
-                window.location.href = link2;}
-                </script>
       <div class="mdui-divider"></div>
   <ul class="mdui-list">
     <a href="./files/s.exe"><li class="mdui-list-item">
@@ -91,7 +119,7 @@
                <div class="intro mdui-typo"> 
                  <p></p> 
                  <p>©Copyright by Nick_DL 2022-2024. All rights reserved.</p><p></p> 
-                 <p>10.37.121.24</p>
+                 <p>10.37.121.24 -> 10.37.121.124 -> 10.37.121.204</p>
                  <p></p>
                </div> 
              </div> 
