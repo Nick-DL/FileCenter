@@ -43,15 +43,13 @@
   <body class="mdui-loaded mdui-theme-layout-auto">
     <div class="mdui-appbar mdui-shadow-0">
       <div class="mdui-toolbar">
+        <a href="../" class="mdui-btn mdui-btn-icon" mdui-menu="{target: '#more'}"><i class="mdui-icon material-icons">&#xe5c4;</i></button>
         <a href="/" class="mdui-typo-headline" style="font-weight: 500;">FileCenter</a>
         <a href="/" class="mdui-typo-title" style="font-weight: 500;"><small><span id="currentSiteName">一号站</span></small></a>
         <div class="mdui-toolbar-spacer"></div>
-        <button class="mdui-btn mdui-btn-icon" mdui-menu="{target: '#more'}"><i
-            class="mdui-icon material-icons">&#xe5d4;</i></button>
+        <button class="mdui-btn mdui-btn-icon" mdui-menu="{target: '#more'}">
+          <i class="mdui-icon material-icons">&#xe5d4;</i></button>
         <ul class="mdui-menu" id="more">
-          <li class="mdui-menu-item">
-            <a href="/indexold.html">旧版主页</a>
-          </li>
           <li class="mdui-menu-item">
             <a href="/about">关于本站</a>
           </li>
@@ -61,48 +59,57 @@
   
     <div class="mdui-container">
       <div class="mdui-row">
-        <div class="mdui-col-md-6 mdui-col-offset-md-3">
-          <p align="center" class="mdui-typo-display-3" style="color: #0A59F7; font-weight: 700;  ">FileCenter</p>
+        <div class="mdui-col-md-6 mdui-col-offset-md-3 mdui-p-t-3 mdui-p-b-3 ">
+          <p align="center" class=" mdui-typo-display-1" style="color: #0A59F7; font-weight: 700;  ">
+            <i class="mdui-m-b-2 mdui-list-item-avatar mdui-icon material-icons mdui-color-deep-purple-accent">folder_open</i>
+            文件列表</p>
         </div>
-        <div class="mdui-col-md-6 mdui-col-offset-md-3">
+        <div class="mdui-col-md-6 mdui-col-offset-md-3" id="fileListArea">
           <div class="mdui-card mdui-shadow-0">
             <ul class="mdui-list">
-              <a href="/mirror-sites/">
+              <li class="mdui-subheader">软件</li>
+              <a href="/files/c.exe">
                 <li class="mdui-list-item">
-                  <i class="mdui-list-item-avatar mdui-icon material-icons mdui-color-deep-purple-accent">folder_open</i>
-                  <div class="mdui-list-item-content">文件列表</div>
-                  <i class="mdui-list-item-icon mdui-icon material-icons">chevron_right</i>
+                  <div class="mdui-list-item-content">Chrome</div>
+                  <i class="mdui-list-item-icon mdui-icon material-icons">&#xe2c4;</i>
                 </li>
               </a>
-              <li class="mdui-divider-inset mdui-m-y-0"></li>
-              <a href="/file-list/">
+              <li class="mdui-divider mdui-m-y-0"></li>
+              <a href="/files/e.exe">
                 <li class="mdui-list-item">
-                  <i class="mdui-list-item-avatar mdui-icon material-icons mdui-color-indigo-accent">navigation</i>
-                  <div class="mdui-list-item-content">网址导航</div>
-                  <i class="mdui-list-item-icon mdui-icon material-icons">chevron_right</i>
+                  <div class="mdui-list-item-content">Edge</div>
+                  <i class="mdui-list-item-icon mdui-icon material-icons">&#xe2c4;</i>
                 </li>
               </a>
-              <li class="mdui-divider-inset mdui-m-y-0"></li>
-              <a href="/navigation/">
+              <li class="mdui-divider mdui-m-y-0"></li>
+              <a href="/files/s.exe">
                 <li class="mdui-list-item">
-                  <i class="mdui-list-item-avatar mdui-icon material-icons mdui-color-blue-accent">sync</i>
-                  <div class="mdui-list-item-content">切换站点</div>
-                  <i class="mdui-list-item-icon mdui-icon material-icons">chevron_right</i>
-                </li>
-              </a>
-              <li class="mdui-divider-inset mdui-m-y-0"></li>
-              <a href="/about/">
-                <li class="mdui-list-item">
-                  <i class="mdui-list-item-avatar mdui-icon material-icons mdui-color-blue-700">info_outline</i>
-                  <div class="mdui-list-item-content">关于本站</div>
-                  <i class="mdui-list-item-icon mdui-icon material-icons">chevron_right</i>
+                  <div class="mdui-list-item-content">搜狗输入法</div>
+                  <i class="mdui-list-item-icon mdui-icon material-icons">&#xe2c4;</i>
                 </li>
               </a>
             </ul>
           </div>
           <p></p>
-          
-          <p />
+          <div class="mdui-card mdui-shadow-0">
+            <ul class="mdui-list">
+              <li class="mdui-subheader">字体</li>
+              <a href="/files/SourceSerlf.zip">
+                <li class="mdui-list-item">
+                  <div class="mdui-list-item-content">思源宋体</div>
+                  <i class="mdui-list-item-icon mdui-icon material-icons">&#xe2c4;</i>
+                </li>
+              </a>
+              <li class="mdui-divider mdui-m-y-0"></li>
+              <a href="/files/h.zip">
+                <li class="mdui-list-item">
+                  <div class="mdui-list-item-content">HarmonyOS Sans</div>
+                  <i class="mdui-list-item-icon mdui-icon material-icons">&#xe2c4;</i>
+                </li>
+              </a>
+            </ul>
+          </div>
+          <p></p>
         </div>
       </div>
     </div><p></p>
@@ -113,8 +120,8 @@
               <div class="intro mdui-typo"> 
                 <p></p> 
                 <p>当前 IP: <span id="currentIP">10.37.121.204</span><br>
-                服务时间： <span id="currentServeTime">每天 07:15 - 21:50</span><br>
-                最近更新于: <span id="latestUpdateTime">2025年9月28日</span></p>
+                服务时间：<span id="currentServeTime">每天 07:15 - 21:50</span></p>
+                <p><span id="noticeInfo"></span></p>
                 <p><span id="copyrightInfo">©Copyright by Nick_DL 2022-2025. All rights reserved.</span></p>
                 <p></p>
               </div> 

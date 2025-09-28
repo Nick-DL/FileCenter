@@ -1,0 +1,35 @@
+{
+    "infoUpdate": "2024-01-15 14:30:00",
+    "mirrors": [
+        {
+            "name": "主站点",
+            "ip": "192.168.1.100",
+            "location": "7×24小时",
+            "serviceTime": "7×24小时",
+            "status": "active",
+            "isCurrent": true,
+            "remark": "主要服务节点，带宽充足",
+            "priority": 1
+        },
+        {
+            "name": "镜像站A",
+            "ip": "192.168.1.101",
+            "location": "7×24小时",
+            "serviceTime": "北京时间 9:00-18:00",
+            "status": "active",
+            "isCurrent": false,
+            "remark": "海外加速节点",
+            "priority": 2
+        },
+        {
+            "name": "镜像站B",
+            "ip": "192.168.1.102",
+            "location": "7×24小时",
+            "serviceTime": "北京时间 8:00-22:00",
+            "status": "maintenance",
+            "isCurrent": false,
+            "remark": "维护中，预计2024-01-20恢复",
+            "priority": 3
+        }
+    ]
+}

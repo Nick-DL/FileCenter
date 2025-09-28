@@ -1,0 +1,24 @@
+{
+    "categories": [
+        {
+            "name": "软件",
+            "files": [
+                {
+                    "name": "Chrome",
+                    "path": "/file/c.exe"                },
+                {
+                    "name": "Edge",
+                    "path": "/file/e.exe"                }
+            ]
+        },
+        {
+            "name": "字体",
+            "files": [
+                {
+                    "name": "思源黑体",
+                    "path": "/file/1.zip"
+                }
+            ]
+        }
+    ]
+}

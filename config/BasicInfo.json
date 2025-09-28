@@ -1,0 +1,17 @@
+{
+    "siteInfo": {
+        "name": "一号站"
+    },
+    "notification": {
+        "enabled": true,
+        "message": "仅用于局域网连通性测试，学校用网的高峰时段不要访问。"
+    },
+    "lastUpdate": {
+        "date": "2025-09-28",
+        "version": "v2.0.0",
+        "description": "本次更新说明"
+    },
+    "copyright": {
+        "text": "©Copyright by Nick_DL 2022-2025. All rights reserved."
+}
+}

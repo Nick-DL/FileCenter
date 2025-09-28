@@ -1,0 +1,39 @@
+{
+    "categories": [
+        {
+            "name": "开发资源",
+            "links": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com",
+                    "description": "全球最大的代码托管平台",
+                    "icon": "<i class='fab fa-github'></i>"
+                },
+                {
+                    "name": "Stack Overflow",
+                    "url": "https://stackoverflow.com",
+                    "description": "程序员问答社区",
+                    "icon": "<i class='fab fa-stack-overflow'></i>"
+                }
+            ]
+        },
+        {
+            "name": "设计资源",
+            "links": [
+                {
+                    "name": "Dribbble",
+                    "url": "https://dribbble.com",
+                    "description": "设计师作品展示平台",
+                    "icon": "<i class='fab fa-dribbble'></i>"
+                    
+                },
+                {
+                    "name": "Behance",
+                    "url": "https://www.behance.net",
+                    "description": "Adobe旗下的创意作品平台",
+                    "icon": "<i class='fab fa-behance'></i>"
+                                }
+            ]
+        }
+    ]
+}
