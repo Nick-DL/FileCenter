@@ -67,7 +67,7 @@
         <div class="mdui-col-md-6 mdui-col-offset-md-3">
           <div class="mdui-card mdui-shadow-0">
             <ul class="mdui-list">
-              <a href="/mirror-sites/">
+              <a href="/file-list/">
                 <li class="mdui-list-item">
                   <i class="mdui-list-item-avatar mdui-icon material-icons mdui-color-deep-purple-accent">folder_open</i>
                   <div class="mdui-list-item-content">文件列表</div>
@@ -75,7 +75,7 @@
                 </li>
               </a>
               <li class="mdui-divider-inset mdui-m-y-0"></li>
-              <a href="/file-list/">
+              <a href="/navigation/">
                 <li class="mdui-list-item">
                   <i class="mdui-list-item-avatar mdui-icon material-icons mdui-color-indigo-accent">navigation</i>
                   <div class="mdui-list-item-content">网址导航</div>
@@ -83,7 +83,7 @@
                 </li>
               </a>
               <li class="mdui-divider-inset mdui-m-y-0"></li>
-              <a href="/navigation/">
+              <a href="/mirror-sites/">
                 <li class="mdui-list-item">
                   <i class="mdui-list-item-avatar mdui-icon material-icons mdui-color-blue-accent">sync</i>
                   <div class="mdui-list-item-content">切换站点</div>
@@ -105,23 +105,33 @@
           <p />
         </div>
       </div>
+      <div class="mdui-card mdui-shadow-0 mdui-color-yellow-100 text-color-changing mdui-valign">
+        <div class="mdui-card-primary mdui-col-xs-2 mdui-col-sm-1">
+          <div class="mdui-card-primary-title mdui-p-b-1">
+            <i class="mdui-icon material-icons">&#xe001;</i>
+          </div>
+        </div>
+        <div class="mdui-card-content mdui-typo">
+          <p /><span id="noticeInfo">本站仅用于局域网连通性测试，请勿在学校用网的高峰时段访问。</span></div>
+
+      </div>
     </div><p></p>
-      <div class="footer-nav mdui-color-grey-200"> 
-        <div class="mdui-container"> 
-          <div class="mdui-row"> 
-            <div class="mdui-col-sm-12">  
-              <div class="intro mdui-typo"> 
-                <p></p> 
-                <p>当前 IP: <span id="currentIP">10.37.121.204</span><br>
-                服务时间： <span id="currentServeTime">每天 07:15 - 21:50</span><br>
-                最近更新于: <span id="latestUpdateTime">2025年9月28日</span></p>
-                <p><span id="copyrightInfo">©Copyright by Nick_DL 2022-2025. All rights reserved.</span></p>
-                <p></p>
-              </div> 
+    <div class="footer-nav mdui-color-grey-200"> 
+      <div class="mdui-container"> 
+        <div class="mdui-row"> 
+          <div class="mdui-col-sm-12">  
+            <div class="intro mdui-typo"> 
+              <p></p> 
+              <p>当前 IP: <span id="currentIP">10.37.121.204</span><br>
+              服务时间： <span id="currentServeTime">每天 07:15 - 21:50</span><br>
+              最近更新于: <span id="latestUpdateTime">2025年9月28日</span></p>
+              <p><span id="copyrightInfo">©Copyright by Nick_DL 2022-2025. All rights reserved.</span></p>
+              <p></p>
             </div> 
           </div> 
         </div> 
-      </div>
+      </div> 
+    </div>
     <script src="/js/mdui.min.js"></script>
   <style>body {background-color: #f1f3f5;}</style>
   </body>

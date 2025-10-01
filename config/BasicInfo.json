@@ -1,13 +1,14 @@
 {
     "siteInfo": {
-        "name": "一号站"
+        "name": "一号站",
+        "id": "1"
     },
     "notification": {
         "enabled": true,
-        "message": "仅用于局域网连通性测试，学校用网的高峰时段不要访问。"
+        "message": "本站仅用于局域网连通性测试，请勿在学校用网的高峰时段访问。"
     },
     "lastUpdate": {
-        "date": "2025-09-28",
+        "date": "2025年9月28日",
         "version": "v2.0.0",
         "description": "本次更新说明"
     },

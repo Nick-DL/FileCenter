@@ -61,55 +61,67 @@
       <div class="mdui-row">
         <div class="mdui-col-md-6 mdui-col-offset-md-3 mdui-p-t-3 mdui-p-b-3 ">
           <p align="center" class=" mdui-typo-display-1" style="color: #0A59F7; font-weight: 700;  ">
-            <i class="mdui-m-b-2 mdui-list-item-avatar mdui-icon material-icons mdui-color-deep-purple-accent">folder_open</i>
-            文件列表</p>
+            <i class="mdui-m-b-2 mdui-list-item-avatar mdui-icon material-icons mdui-color-blue-accent">sync</i>
+            镜像站列表</p>
         </div>
-        <div class="mdui-col-md-6 mdui-col-offset-md-3" id="fileListArea">
+        <div class="mdui-col-md-6 mdui-col-offset-md-3" id="mirrorSiteListArea">
+          <div class="mdui-card mdui-shadow-0 mdui-color-yellow-100 text-color-changing">
+            <div class="mdui-card-primary">
+              <div class="mdui-card-primary-title">
+                当前：<span id="currentSiteName">一号站</span>
+              </div>
+              <div class="mdui-card-primary-subtitle"><span id="currentRemark"></span></div>
+            </div>
+            <div class="mdui-card-content mdui-typo">
+              <p>当前 IP: <span id="currentIP">10.37.121.204</span><br>
+                服务时间： <span id="currentServeTime">每天 07:15 - 21:50</span><br>
+                位置：<span id="currentLocation">山下校区通慧楼</span>
+              </p>
+            </div>
+          </div>
+          <p></p>
           <div class="mdui-card mdui-shadow-0">
+            <div class="mdui-card-primary mdui-typo">
+              <div class="mdui-card-primary-title"><span id="SiteName">二号站</span></div>
+              <div class="mdui-card-primary-subtitle"><span id="Remark"></span></div>
+            </div>
+            <div class="mdui-card-content mdui-typo">
+              <p>当前 IP: <span id="IP">10.37.121.127</span><br>
+                服务时间： <span id="ServeTime">每天 06:30 - 21:50</span><br>
+                位置：<span id="Location">山上校区远翔楼</span>
+              </p>
+            </div>
             <ul class="mdui-list">
-              <li class="mdui-subheader">软件</li>
-              <a href="/files/c.exe">
+              <a href="http://10.37.121.127">
                 <li class="mdui-list-item">
-                  <div class="mdui-list-item-content">Chrome</div>
-                  <i class="mdui-list-item-icon mdui-icon material-icons">&#xe2c4;</i>
-                </li>
-              </a>
-              <li class="mdui-divider mdui-m-y-0"></li>
-              <a href="/files/e.exe">
-                <li class="mdui-list-item">
-                  <div class="mdui-list-item-content">Edge</div>
-                  <i class="mdui-list-item-icon mdui-icon material-icons">&#xe2c4;</i>
-                </li>
-              </a>
-              <li class="mdui-divider mdui-m-y-0"></li>
-              <a href="/files/s.exe">
-                <li class="mdui-list-item">
-                  <div class="mdui-list-item-content">搜狗输入法</div>
-                  <i class="mdui-list-item-icon mdui-icon material-icons">&#xe2c4;</i>
+                  <div class="mdui-list-item-content" style="color: #0A59F7; font-weight: 500; ">跳转</div>
+                  <i class="mdui-list-item-icon mdui-icon material-icons">chevron_right</i>
                 </li>
               </a>
             </ul>
           </div>
           <p></p>
           <div class="mdui-card mdui-shadow-0">
+            <div class="mdui-card-primary mdui-typo">
+              <div class="mdui-card-primary-title"><span id="SiteName">三号站</span></div>
+              <div class="mdui-card-primary-subtitle"><span id="Remark">备用站点，仅电子班牌可访问</span></div>
+            </div>
+            <div class="mdui-card-content mdui-typo">
+              <p>当前 IP: <span id="IP">10.37.120.142</span><br>
+                服务时间： <span id="ServeTime">每天 06:30 - 22:30</span><br>
+                位置：<span id="Location">山上校区远翔楼</span>
+              </p>
+            </div>
             <ul class="mdui-list">
-              <li class="mdui-subheader">字体</li>
-              <a href="/files/SourceSerlf.zip">
+              <a href="http://10.37.120.142">
                 <li class="mdui-list-item">
-                  <div class="mdui-list-item-content">思源宋体</div>
-                  <i class="mdui-list-item-icon mdui-icon material-icons">&#xe2c4;</i>
-                </li>
-              </a>
-              <li class="mdui-divider mdui-m-y-0"></li>
-              <a href="/files/h.zip">
-                <li class="mdui-list-item">
-                  <div class="mdui-list-item-content">HarmonyOS Sans</div>
-                  <i class="mdui-list-item-icon mdui-icon material-icons">&#xe2c4;</i>
+                  <div class="mdui-list-item-content" style="color: #0A59F7; font-weight: 500; ">跳转</div>
+                  <i class="mdui-list-item-icon mdui-icon material-icons">chevron_right</i>
                 </li>
               </a>
             </ul>
           </div>
-          <p></p>
+
         </div>
       </div>
     </div><p></p>
