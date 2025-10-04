@@ -2,36 +2,36 @@
     "infoUpdate": "2024-01-15 14:30:00",
     "mirrors": [
         {
-            "name": "主站点",
+            "name": "一号站",
             "id": "1",
-            "ip": "192.168.1.100",
-            "location": "7×24小时",
-            "serviceTime": "7×24小时",
+            "ip": "10.37.121.204",
+            "location": "山下校区通慧楼",
+            "serviceTime": "每天 07:15 - 21:50",
             "status": "active",
             "isCurrent": true,
-            "remark": "主要服务节点，带宽充足",
+            "remark": "主要服务节点",
             "priority": 1
         },
         {
-            "name": "镜像站A",
+            "name": "二号站",
             "id": "2",
-            "ip": "192.168.1.101",
-            "location": "7×24小时",
-            "serviceTime": "北京时间 9:00-18:00",
+            "ip": "10.37.121.127",
+            "location": "山上校区远翔楼",
+            "serviceTime": "每天 06:30 - 21:50",
             "status": "active",
             "isCurrent": false,
-            "remark": "海外加速节点",
+            "remark": "备用服务节点",
             "priority": 2
         },
         {
-            "name": "镜像站B",
+            "name": "三号站",
             "id": "3",
-            "ip": "192.168.1.102",
-            "location": "7×24小时",
-            "serviceTime": "北京时间 8:00-22:00",
-            "status": "maintenance",
+            "ip": "10.37.120.142",
+            "location": "山上校区远翔楼",
+            "serviceTime": "每天 06:30 - 22:30",
+            "status": "active",
             "isCurrent": false,
-            "remark": "维护中，预计2024-01-20恢复",
+            "remark": "备用站点，仅电子班牌可访问",
             "priority": 3
         }
     ]

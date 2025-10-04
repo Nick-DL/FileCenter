@@ -63,7 +63,7 @@
     <div class="mdui-appbar mdui-shadow-0">
       <div class="mdui-toolbar">
         <a href="/" class="mdui-typo-headline" style="font-weight: 500;">FileCenter</a>
-        <a href="/" class="mdui-typo-title" style="font-weight: 500;"><small><span id="currentSiteName">加载中<span class="loading"></span></span></small></a>
+        <a href="/" class="mdui-typo-title" style="font-weight: 500;"><small><span id="currentSiteName"><span class="mdui-m-t-3 mdui-spinner"></span></span></small></a>
         <div class="mdui-toolbar-spacer"></div>
         <button class="mdui-btn mdui-btn-icon" mdui-menu="{target: '#more'}"><i
             class="mdui-icon material-icons">&#xe5d4;</i></button>
@@ -131,7 +131,7 @@
           </div>
         </div>
         <div class="mdui-card-content mdui-typo">
-          <p><span id="noticeInfo">加载中<span class="loading"></span></span></p>
+          <p><span id="noticeInfo"><span class="mdui-spinner"></span></span></p>
         </div>
       </div>
     </div>
@@ -145,10 +145,10 @@
           <div class="mdui-col-sm-12">  
             <div class="intro mdui-typo"> 
               <p></p> 
-              <p>当前 IP: <span id="currentIP">加载中<span class="loading"></span></span><br>
-              服务时间： <span id="currentServeTime">加载中<span class="loading"></span></span><br>
-              最近更新于: <span id="latestUpdateTime">加载中<span class="loading"></span></span></p>
-              <p><span id="copyrightInfo">加载中<span class="loading"></span></span></p>
+              <p>当前 IP: <span id="currentIP">加载中</span><br>
+              服务时间:  <span id="currentServeTime">加载中</span><br>
+              最近更新于: <span id="latestUpdateTime">加载中</span></p>
+              <p><span id="copyrightInfo">加载中</span></p>
               <p></p>
             </div> 
           </div> 
@@ -172,7 +172,7 @@
             fetch('./config/BasicInfo.json'),
             fetch('./config/MirrorSiteInfo.json')
           ]);
-          
+
           // 检查响应状态
           if (!basicInfoResponse.ok || !mirrorSiteInfoResponse.ok) {
             throw new Error('配置文件加载失败');
