@@ -1,148 +1,131 @@
 ﻿<!doctype html>
 <html lang="zh-cmn-Hans">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no"/>
-    <meta name="renderer" content="webkit"/>
-    <meta name="force-rendering" content="webkit"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <link rel="stylesheet" href="/css/mdui.min.css"/>
-    <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
-    <title>FileCenter</title>
-    <style type="text/css">
-      body {background-color: #f1f3f5;}
-      .mdui-card { border-radius: 18px; }
-      .mdui-btn-block { border-radius: 12px; }
-      .mdui-btn { border-radius: 12px; }
-      .mdui-menu-open { border-radius: 12px;
-        box-shadow: 0 10px 20px 0 rgba(0,0,0,.22);  }
-      .mdui-menu-closing { border-radius: 12px;
-        box-shadow: 0 10px 20px 0 rgba(0,0,0,.22);  }
-      .mdui-tooltip { border-radius: 6px; }
-      .mdui-table-fluid { border-radius: 12px; }
-      .mdui-panel-item { border-radius: 12px; }
-    
-      @media (prefers-color-scheme: dark) {
-        .mdui-btn-icon svg use {
-          fill: white !important;
-        }
-  
-        .mdui-color-yellow-100 {
-          background-color: #827717 !important;
-        }
-    
-        .mdui-color-grey-100 {
-          background-color: #616161 !important;
-        }
-  
-        .text-color-changing {
-          color: #ffffff !important;
-        }
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" />
+  <meta name="renderer" content="webkit" />
+  <meta name="force-rendering" content="webkit" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <link rel="stylesheet" href="/css/mdui.min.css" />
+  <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
+  <title>FileCenter</title>
+  <style type="text/css">
+    body {
+      background-color: #f1f3f5;
+    }
+
+    .mdui-card {
+      border-radius: 18px;
+    }
+
+    .mdui-btn-block {
+      border-radius: 12px;
+    }
+
+    .mdui-btn {
+      border-radius: 12px;
+    }
+
+    .mdui-menu-open {
+      border-radius: 12px;
+      box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .22);
+    }
+
+    .mdui-menu-closing {
+      border-radius: 12px;
+      box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .22);
+    }
+
+    .mdui-tooltip {
+      border-radius: 6px;
+    }
+
+    .mdui-table-fluid {
+      border-radius: 12px;
+    }
+
+    .mdui-panel-item {
+      border-radius: 12px;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .mdui-btn-icon svg use {
+        fill: white !important;
       }
-    </style>
-  </head>
-  <body class="mdui-loaded mdui-theme-layout-auto">
-    <div class="mdui-appbar mdui-shadow-0">
-      <div class="mdui-toolbar">
-        <a href="../" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">&#xe5c4;</i></button>
-        <a href="/" class="mdui-typo-headline" style="font-weight: 500;">FileCenter</a>
-        <a href="/" class="mdui-typo-title" style="font-weight: 500;"><small><span id="currentSiteName">一号站</span></small></a>
-        <div class="mdui-toolbar-spacer"></div>
-        <button class="mdui-btn mdui-btn-icon" mdui-menu="{target: '#more'}">
-          <i class="mdui-icon material-icons">&#xe5d4;</i></button>
-        <ul class="mdui-menu" id="more">
-          <li class="mdui-menu-item">
-            <a href="/about">关于本站</a>
-          </li>
-        </ul>
+
+      .mdui-color-yellow-100 {
+        background-color: #827717 !important;
+      }
+
+      .mdui-color-grey-100 {
+        background-color: #616161 !important;
+      }
+
+      .text-color-changing {
+        color: #ffffff !important;
+      }
+    }
+  </style>
+</head>
+
+<body class="mdui-loaded mdui-theme-layout-auto">
+  <div class="mdui-appbar mdui-shadow-0">
+    <div class="mdui-toolbar">
+      <a href="../" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">&#xe5c4;</i></a>
+      <a href="/" class="mdui-typo-headline" style="font-weight: 500;">FileCenter</a>
+      <a href="/" class="mdui-typo-title" style="font-weight: 500;"><small><span id="currentSiteName">加载中<span
+              class="mdui-m-t-3 mdui-spinner"></span></span></small></a>
+      <div class="mdui-toolbar-spacer"></div>
+      <button class="mdui-btn mdui-btn-icon" mdui-menu="{target: '#more'}">
+        <i class="mdui-icon material-icons">&#xe5d4;</i></button>
+      <ul class="mdui-menu" id="more">
+        <li class="mdui-menu-item">
+          <a href="/about">关于本站</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="mdui-container">
+    <div class="mdui-row">
+      <div class="mdui-col-md-6 mdui-col-offset-md-3 mdui-p-t-3 mdui-p-b-3 ">
+        <p align="center" class=" mdui-typo-display-1" style="color: #0A59F7; font-weight: 700;  ">
+          <i class="mdui-m-b-2 mdui-list-item-avatar mdui-icon material-icons mdui-color-blue-accent">sync</i>
+          镜像站列表
+        </p>
+      </div>
+      <div class="mdui-col-md-6 mdui-col-offset-md-3" id="mirrorSiteListArea">
+        <!-- 加载提示 -->
+        <div class="mdui-card mdui-shadow-0 mdui-p-a-4 mdui-text-center">
+          <div class="mdui-typo">
+            <p>正在加载镜像站信息...</p>
+            <div class="mdui-spinner"></div>
+          </div>
+        </div>
       </div>
     </div>
-  
+  </div>
+  <p></p>
+  <div class="footer-nav mdui-color-grey-200">
     <div class="mdui-container">
       <div class="mdui-row">
-        <div class="mdui-col-md-6 mdui-col-offset-md-3 mdui-p-t-3 mdui-p-b-3 ">
-          <p align="center" class=" mdui-typo-display-1" style="color: #0A59F7; font-weight: 700;  ">
-            <i class="mdui-m-b-2 mdui-list-item-avatar mdui-icon material-icons mdui-color-blue-accent">sync</i>
-            镜像站列表</p>
+        <div class="mdui-col-sm-12">
+          <div class="intro mdui-typo">
+            <p></p>
+            <p></p>
+            <p>镜像站信息更新时间: <span id="MirrorSiteUpdateTime">2025年10月2日</span></p>
+            <p><span id="noticeInfo"></span></p>
+            <p><span id="copyrightInfo">©Copyright by Nick_DL 2022-2025. All rights reserved.</span></p>
+            <p></p>
+          </div>
         </div>
-        <div class="mdui-col-md-6 mdui-col-offset-md-3" id="mirrorSiteListArea">
-          <div class="mdui-card mdui-shadow-0 mdui-color-yellow-100 text-color-changing">
-            <div class="mdui-card-primary">
-              <div class="mdui-card-primary-title">
-                当前：<span id="currentSiteName">一号站</span>
-              </div>
-              <div class="mdui-card-primary-subtitle"><span id="currentRemark"></span></div>
-            </div>
-            <div class="mdui-card-content mdui-typo">
-              <p>当前 IP: <span id="currentIP">10.37.121.204</span><br>
-                服务时间： <span id="currentServeTime">每天 07:15 - 21:50</span><br>
-                位置：<span id="currentLocation">山下校区通慧楼</span>
-              </p>
-            </div>
-          </div>
-          <p></p>
-          <div class="mdui-card mdui-shadow-0">
-            <div class="mdui-card-primary mdui-typo">
-              <div class="mdui-card-primary-title"><span id="SiteName">二号站</span></div>
-              <div class="mdui-card-primary-subtitle"><span id="Remark"></span></div>
-            </div>
-            <div class="mdui-card-content mdui-typo">
-              <p>当前 IP: <span id="IP">10.37.121.127</span><br>
-                服务时间： <span id="ServeTime">每天 06:30 - 21:50</span><br>
-                位置：<span id="Location">山上校区远翔楼</span>
-              </p>
-            </div>
-            <ul class="mdui-list">
-              <a href="http://10.37.121.127">
-                <li class="mdui-list-item">
-                  <div class="mdui-list-item-content" style="color: #0A59F7; font-weight: 500; ">跳转</div>
-                  <i class="mdui-list-item-icon mdui-icon material-icons">chevron_right</i>
-                </li>
-              </a>
-            </ul>
-          </div>
-          <p></p>
-          <div class="mdui-card mdui-shadow-0">
-            <div class="mdui-card-primary mdui-typo">
-              <div class="mdui-card-primary-title"><span id="SiteName">三号站</span></div>
-              <div class="mdui-card-primary-subtitle"><span id="Remark">备用站点，仅电子班牌可访问</span></div>
-            </div>
-            <div class="mdui-card-content mdui-typo">
-              <p>当前 IP: <span id="IP">10.37.120.142</span><br>
-                服务时间： <span id="ServeTime">每天 06:30 - 22:30</span><br>
-                位置：<span id="Location">山上校区远翔楼</span>
-              </p>
-            </div>
-            <ul class="mdui-list">
-              <a href="http://10.37.120.142">
-                <li class="mdui-list-item">
-                  <div class="mdui-list-item-content" style="color: #0A59F7; font-weight: 500; ">跳转</div>
-                  <i class="mdui-list-item-icon mdui-icon material-icons">chevron_right</i>
-                </li>
-              </a>
-            </ul>
-          </div>
+      </div>
+    </div>
+  </div>
+  <script src="/js/mdui.min.js"></script>
+  <script src="/js/main.js"></script>
+  <script src="/js/MirrorSite.js">  </script>
+</body>
 
-        </div>
-      </div>
-    </div><p></p>
-      <div class="footer-nav mdui-color-grey-200"> 
-        <div class="mdui-container"> 
-          <div class="mdui-row"> 
-            <div class="mdui-col-sm-12">  
-              <div class="intro mdui-typo"> 
-                <p></p> 
-                <p></p>
-                <p>镜像站信息更新时间: <span id="MirrorSiteUpdateTime">2025年10月2日</span></p>
-                <p><span id="noticeInfo"></span></p>
-                <p><span id="copyrightInfo">©Copyright by Nick_DL 2022-2025. All rights reserved.</span></p>
-                <p></p>
-              </div> 
-            </div> 
-          </div> 
-        </div> 
-      </div>
-    <script src="/js/mdui.min.js"></script>
-    <srcipt src="/js/main.js"></srcipt>
-  </body>
 </html>

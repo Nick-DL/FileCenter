@@ -9,8 +9,8 @@ async function loadConfigData() {
     try {
         // 并行加载两个配置文件
         const [basicInfoResponse, mirrorSiteInfoResponse] = await Promise.all([
-            fetch('./config/BasicInfo.json'),
-            fetch('./config/MirrorSiteInfo.json')
+            fetch('/config/BasicInfo.json'),
+            fetch('/config/MirrorSiteInfo.json')
         ]);
 
         // 检查响应状态
