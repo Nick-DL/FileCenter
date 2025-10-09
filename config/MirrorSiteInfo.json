@@ -1,5 +1,5 @@
 {
-    "infoUpdate": "2024-01-15 14:30:00",
+    "infoUpdate": "2025年10月2日",
     "mirrors": [
         {
             "name": "一号站",
@@ -8,8 +8,7 @@
             "location": "山下校区通慧楼",
             "serviceTime": "每天 07:15 - 21:50",
             "status": "active",
-            "isCurrent": true,
-            "remark": "主要服务节点",
+            "remark": "",
             "priority": 1
         },
         {
@@ -19,8 +18,7 @@
             "location": "山上校区远翔楼",
             "serviceTime": "每天 06:30 - 21:50",
             "status": "active",
-            "isCurrent": false,
-            "remark": "备用服务节点",
+            "remark": "",
             "priority": 2
         },
         {
@@ -30,7 +28,6 @@
             "location": "山上校区远翔楼",
             "serviceTime": "每天 06:30 - 22:30",
             "status": "active",
-            "isCurrent": false,
             "remark": "备用站点，仅电子班牌可访问",
             "priority": 3
         }
