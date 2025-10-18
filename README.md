@@ -14,3 +14,7 @@ If these files take up too much space, you could delete them, but I'll be sad *_
 I'm now in Grade Senior.Due to loss of input method software, I have to write in English.
 
 Nick-DL on 20250914
+
+---
+
+[About FileCenter](/about/index.html)

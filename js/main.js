@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 // 加载配置数据
+//const timer = setTimeout(() => {
 async function loadConfigData() {
     try {
         // 并行加载两个配置文件
@@ -55,6 +56,7 @@ function safeUpdateElement(elementId, content) {
 function updatePageContent(basicInfo, mirrorSiteInfo) {
     // 更新站点名称
     safeUpdateElement('currentSiteName', basicInfo.siteInfo.name);
+    safeUpdateElement('currentSiteName1', basicInfo.siteInfo.name);
 
     // 更新通知信息（只在主页中存在）
     const notificationCard = document.getElementById('notificationCard');
@@ -80,6 +82,7 @@ function updatePageContent(basicInfo, mirrorSiteInfo) {
 
     // 更新最近更新时间
     safeUpdateElement('latestUpdateTime', basicInfo.lastUpdate.date);
+    safeUpdateElement('FcVersion', basicInfo.lastUpdate.version);
 
     // 查找当前站点的镜像信息
     const currentSiteId = basicInfo.siteInfo.id;
@@ -91,6 +94,8 @@ function updatePageContent(basicInfo, mirrorSiteInfo) {
 
         // 更新服务时间
         safeUpdateElement('currentServeTime', currentMirror.serviceTime);
+        safeUpdateElement('currentLocation', currentMirror.location);
+
     } else {
         // 如果没有找到对应的镜像信息
         safeUpdateElement('currentIP', '未知');
@@ -99,8 +104,8 @@ function updatePageContent(basicInfo, mirrorSiteInfo) {
     }
 
     // 移除所有加载动画（安全方式）
-    const spinners = document.querySelectorAll('.mdui-spinner');
-    spinners.forEach(spinner => {
-        spinner.remove();
-    });
+    //const spinners = document.querySelectorAll('.mdui-spinner');
+    //spinners.forEach(spinner => {
+        //spinner.remove();
+    //});
   }

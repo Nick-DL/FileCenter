@@ -1,0 +1,202 @@
+﻿<!doctype html>
+<html lang="zh-cmn-Hans">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" />
+  <meta name="renderer" content="webkit" />
+  <meta name="force-rendering" content="webkit" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <link rel="stylesheet" href="/css/mdui.min.css" />
+  <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
+  <title>FileCenter</title>
+  <style type="text/css">
+    body {
+      background-color: #f1f3f5;
+    }
+
+    .mdui-card {
+      border-radius: 18px;
+    }
+
+    .mdui-btn-block {
+      border-radius: 12px;
+    }
+
+    .mdui-btn {
+      border-radius: 12px;
+    }
+
+    .mdui-menu-open {
+      border-radius: 12px;
+      box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .22);
+    }
+
+    .mdui-menu-closing {
+      border-radius: 12px;
+      box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .22);
+    }
+
+    .mdui-tooltip {
+      border-radius: 6px;
+    }
+
+    .mdui-table-fluid {
+      border-radius: 12px;
+    }
+
+    .mdui-panel-item {
+      border-radius: 12px;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .mdui-btn-icon svg use {
+        fill: white !important;
+      }
+
+      .mdui-color-yellow-100 {
+        background-color: #827717 !important;
+      }
+
+      .mdui-color-grey-200 {
+        background-color: #616161 !important;
+      }
+
+      .text-color-changing {
+        color: #ffffff !important;
+      }
+    }
+  </style>
+</head>
+
+<body class="mdui-loaded mdui-theme-layout-auto">
+  <div class="mdui-appbar mdui-shadow-0">
+    <div class="mdui-toolbar">
+      <a href="../" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">&#xe5c4;</i></a>
+      <a href="/" class="mdui-typo-headline" style="font-weight: 500;">FileCenter</a>
+      <a href="/" class="mdui-typo-title" style="font-weight: 500;"><small><span id="currentSiteName"><span
+              class="mdui-m-t-3 mdui-spinner"></span></span></small></a>
+      <div class="mdui-toolbar-spacer"></div>
+      <button class="mdui-btn mdui-btn-icon" mdui-menu="{target: '#more'}">
+        <i class="mdui-icon material-icons">&#xe5d4;</i></button>
+      <ul class="mdui-menu" id="more">
+        <li class="mdui-menu-item">
+          <a href="/about">关于本站</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="mdui-container">
+    <div class="mdui-row">
+      <div class="mdui-col-md-6 mdui-col-offset-md-3 mdui-p-t-3 mdui-p-b-3 ">
+        <p align="center" class=" mdui-typo-display-1" style="color: #0A59F7; font-weight: 700;  ">
+          <i class="mdui-m-b-2 mdui-list-item-avatar mdui-icon material-icons  mdui-color-blue-700">info_outline</i>
+          关于 FileCenter
+        </p>
+      </div>
+      <div class="mdui-col-md-6 mdui-col-offset-md-3">
+        <div class="mdui-card mdui-shadow-0">
+          <div class="mdui-card-primary mdui-typo">
+            <div class="mdui-card-primary-title">FileCenter</div>
+            <div class="mdui-card-primary-subtitle">版本 <span id="FcVersion">-</span></div>
+          </div>
+          <div class="mdui-card-content mdui-typo">
+            <p>当前站点：<span id="currentSiteName1"></span><br>
+              当前 IP: <span id="currentIP">加载中</span><br>
+              服务时间： <span id="currentServeTime">加载中</span><br>
+              位置：<span id="currentLocation">加载中</span>
+            </p>
+          </div>
+          <ul class="mdui-list">
+            <a href="/indexold.html">
+              <li class="mdui-list-item">
+                <div class="mdui-list-item-content" style="color: #0A59F7; font-weight: 500; ">前往旧版主页</div>
+                <i class="mdui-list-item-icon mdui-icon material-icons">chevron_right</i>
+              </li>
+            </a><a href="/indexolder.html">
+              <li class="mdui-list-item">
+                <div class="mdui-list-item-content" style="color: #0A59F7; font-weight: 500; ">前往远古版主页</div>
+                <i class="mdui-list-item-icon mdui-icon material-icons">chevron_right</i>
+              </li>
+            </a>
+            <a href="mailto:nick_dl@outlook.com">
+              <li class="mdui-list-item">
+                <div class="mdui-list-item-content" style="color: #0A59F7; font-weight: 500; ">联系维护者</div>
+                <i class="mdui-list-item-icon mdui-icon material-icons">chevron_right</i>
+              </li>
+            </a>
+          </ul>
+        </div>
+        <p></p>
+        <div class="mdui-card mdui-shadow-0">
+          <div class="mdui-card-primary mdui-typo">
+            <div class="mdui-card-primary-title">小故事</div>
+            <div class="mdui-card-primary-subtitle"></div>
+          </div>
+          <div class="mdui-card-content mdui-typo">
+            <p>本站最早建于 2023 年底。靠着一点点 HTML 的经验，我将一些自己和大家常用的文件放在了<span mdui-tooltip="{content: '你猜在哪？'}">校园网内一台公用电脑上<b>*</b></span>，并写了一个简单的文件列表页面以方便访问。后来，经过几次改版和功能完善，FileCenter 逐渐成型，并逐渐完善了功能。</p>
+            <p>如今，FileCenter 已经成为一个集文件列表、网址导航、镜像站点切换等多种功能于一体的网站，旨在方便大家。</p>
+            <p>本站只列出了一部分校园局域网内的网站。实际上，MZ 的校园网非常发达，我们的电子班牌、希沃、教室护眼灯、食堂小卖部刷卡机，甚至广播、监控等等都是以不同的渠道接到<code>10.37.*</code>下的局域网里的。具体用得到的网站，可能就是校园电视台、上网认证和智慧校园后端，但其实还有很多可供大家探索。</p>
+            <p>有问题、建议可以联系维护者。</p>
+          </div>
+        </div>
+        <p></p>
+        <div class="mdui-card mdui-shadow-0">
+          <div class="mdui-card-content mdui-typo">
+            <p>致偶然到访朋友：
+            <br>
+            或许此时，我已经从母校毕业了，想想有些遗憾……
+            <br>
+            我把文件存在这里，主要是为了在校园里任何一台电脑上都能随时取用，省得带U盘了。
+            <br>
+            如果它们占用了太多空间，你可以删除，不过我会有点难过 *_*
+            <br>
+            我现在在高三。因为输入法软件出了问题，只好用英文写了。
+            <br>
+            Nick-DL 于 2025年9月14日</p>
+            <p class="mdui-card-primary-subtitle">原版存放于<a href="/README.md">/README.md</a>。</p>
+          </div>
+        </div>
+        <p></p>
+        <div class="mdui-card mdui-shadow-0">
+          <div class="mdui-card-primary mdui-typo">
+            <div class="mdui-card-primary-title">声明</div>
+            <div class="mdui-card-primary-subtitle"></div>
+          </div>
+          <div class="mdui-card-content mdui-typo">
+            <p>1. 本网站仅用于测试校园局域网连通性。
+            <br>
+            2. 本网站部署于公用电脑上，可能被他人篡改。本人（维护者）无法保证其内容的持续准确性。
+            <br>
+            3. 本网站功能简单，占用小，旨在最低限度消耗网络与服务器资源。
+            <br>
+            4. 请勿用于任何不当用途。
+            </p>
+          </div>
+        </div>
+        <p></p>
+      </div>
+    </div>
+  </div>
+  <p></p>
+  <div class="footer-nav mdui-color-grey-200 text-color-changing">
+    <div class="mdui-container">
+      <div class="mdui-row">
+        <div class="mdui-col-sm-12">
+          <div class="intro mdui-typo">
+            <p></p>
+            <p>更新时间: <span id="latestUpdateTime">2025年10月2日</span></p>
+            <p><span id="noticeInfo"></span></p>
+            <p><span id="copyrightInfo">加载中</span></p>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="/js/mdui.min.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+
+</html>

@@ -1,38 +1,67 @@
 {
     "categories": [
         {
-            "name": "开发资源",
+            "name": "校内网站",
             "links": [
                 {
-                    "name": "GitHub",
-                    "url": "https://github.com",
-                    "description": "全球最大的代码托管平台",
-                    "icon": "<i class='fab fa-github'></i>"
+                    "name": "校园电视台",
+                    "url": "//10.37.2.110",
+                    "description": "新闻周刊首选",
+                    "icon": "<i class='mdui-list-item-avatar mdui-icon material-icons mdui-color-red-accent'>web</i>"
                 },
                 {
-                    "name": "Stack Overflow",
-                    "url": "https://stackoverflow.com",
-                    "description": "程序员问答社区",
-                    "icon": "<i class='fab fa-stack-overflow'></i>"
+                    "name": "微课录播平台",
+                    "url": "//10.37.122.2",
+                    "description": "新闻周刊备选",
+                    "icon": "<i class='mdui-list-item-avatar mdui-icon material-icons mdui-color-indigo-accent'>web</i>"
+                },
+                {
+                    "name": "上网认证系统",
+                    "url": "//10.37.253.3",
+                    "description": "账号密码请向老师获取",
+                    "icon": "<i class='mdui-list-item-avatar mdui-icon material-icons mdui-color-blue-accent'>language</i>"
+                },
+                {
+                    "name": "智慧校园（内）",
+                    "url": "//10.37.123.21",
+                    "description": "",
+                    "icon": "<i class='mdui-list-item-avatar mdui-icon material-icons mdui-color-teal'>web</i>"
+                },
+                {
+                    "name": "神秘网址",
+                    "url": "//192.168.1.1",
+                    "description": "",
+                    "icon": "<i class='mdui-list-item-avatar mdui-icon material-icons mdui-color-green-600'>visibility_off</i>"
                 }
             ]
         },
         {
-            "name": "设计资源",
+            "name": "校外网站",
             "links": [
                 {
-                    "name": "Dribbble",
-                    "url": "https://dribbble.com",
-                    "description": "设计师作品展示平台",
-                    "icon": "<i class='fab fa-dribbble'></i>"
-                    
+                    "name": "ND's Website (蓝星拾光站)",
+                    "url": "https://new.nickdl.site",
+                    "description": "",
+                    "icon": "<i class='mdui-list-item-avatar mdui-color-indigo-50'><img src='/img/ndw.svg'></i>"
                 },
                 {
-                    "name": "Behance",
-                    "url": "https://www.behance.net",
-                    "description": "Adobe旗下的创意作品平台",
-                    "icon": "<i class='fab fa-behance'></i>"
-                                }
+                    "name": "绵阳中学 Wiki",
+                    "url": "https://scmyzx.fandom.com/zh/wiki/绵阳中学_Wiki",
+                    "description": "做进步的棉中人！",
+                    "icon": "<i class='mdui-list-item-avatar mdui-icon material-icons mdui-color-red-accent'>web</i>"
+                },
+                {
+                    "name": "四川省绵阳中学",
+                    "url": "http://www.scmyzx.com.cn/",
+                    "description": "Powered By 四川省绵阳中学",
+                    "icon": "<i class='mdui-list-item-avatar mdui-icon material-icons mdui-color-red-accent'>school</i>"
+                },
+                {
+                    "name": "智慧校园（外）",
+                    "url": "http://61.139.95.228:8087/Addons/GS.MultiPlatform.Html/index.html#/login",
+                    "description": "",
+                    "icon": "<i class='mdui-list-item-avatar mdui-icon material-icons mdui-color-teal'>web</i>"
+                }
             ]
         }
     ]
