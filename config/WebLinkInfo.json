@@ -5,31 +5,31 @@
             "links": [
                 {
                     "name": "校园电视台",
-                    "url": "//10.37.2.110",
+                    "url": "http://10.37.2.110",
                     "description": "新闻周刊首选",
                     "icon": "<i class='mdui-list-item-avatar mdui-icon material-icons mdui-color-red-accent'>web</i>"
                 },
                 {
                     "name": "微课录播平台",
-                    "url": "//10.37.122.2",
+                    "url": "http://10.37.122.2",
                     "description": "新闻周刊备选",
                     "icon": "<i class='mdui-list-item-avatar mdui-icon material-icons mdui-color-indigo-accent'>web</i>"
                 },
                 {
                     "name": "上网认证系统",
-                    "url": "//10.37.253.3",
+                    "url": "http://10.37.253.3",
                     "description": "账号密码请向老师获取",
                     "icon": "<i class='mdui-list-item-avatar mdui-icon material-icons mdui-color-blue-accent'>language</i>"
                 },
                 {
                     "name": "智慧校园（内）",
-                    "url": "//10.37.123.21",
+                    "url": "http://10.37.123.21",
                     "description": "",
                     "icon": "<i class='mdui-list-item-avatar mdui-icon material-icons mdui-color-teal'>web</i>"
                 },
                 {
                     "name": "神秘网址",
-                    "url": "//192.168.1.1",
+                    "url": "http://192.168.1.1",
                     "description": "",
                     "icon": "<i class='mdui-list-item-avatar mdui-icon material-icons mdui-color-green-600'>visibility_off</i>"
                 }
@@ -39,9 +39,9 @@
             "name": "校外网站",
             "links": [
                 {
-                    "name": "ND's Website (蓝星拾光站)",
+                    "name": "ND's Website",
                     "url": "https://new.nickdl.site",
-                    "description": "",
+                    "description": "蓝星拾光站",
                     "icon": "<i class='mdui-list-item-avatar mdui-color-indigo-50'><img src='/img/ndw.svg'></i>"
                 },
                 {

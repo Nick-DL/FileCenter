@@ -1,32 +1,11 @@
 {
     "categories": [
         {
-            "name": "软件",
+            "name": "网页工具",
             "files": [
                 {
-                    "name": "Chrome",
-                    "path": "/file/c.exe"
-                },
-                {
-                    "name": "Edge",
-                    "path": "/file/e.exe"
-                },
-                {
-                    "name": "搜狗输入法",
-                    "path": "/file/e.exe"
-                }
-            ]
-        },
-        {
-            "name": "字体",
-            "files": [
-                {
-                    "name": "思源宋体",
-                    "path": "/file/SourceSerlf.zip"
-                },
-                {
-                    "name": "HarmonyOS Sans",
-                    "path": "/file/h.zip"
+                    "name": "(示例) 清除浏览器缓存、SW",
+                    "path": "/file/RemovingCache&SWScripts"
                 }
             ]
         }

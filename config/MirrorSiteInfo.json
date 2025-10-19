@@ -30,6 +30,16 @@
             "status": "active",
             "remark": "备用站点，仅电子班牌可访问",
             "priority": 3
+        },
+        {
+            "name": "在线站",
+            "id": "10086",
+            "ip": "filecenter.nickdl.site",
+            "location": "GitHub Pages",
+            "serviceTime": "7 * 24 h",
+            "status": "active",
+            "remark": "获取最新镜像站信息",
+            "priority": 3
         }
     ]
 }
