@@ -23,7 +23,7 @@
                 },
                 {
                     "name": "智慧校园（内）",
-                    "url": "http://10.37.123.21",
+                    "url": "http://10.37.2.22:8087",
                     "description": "",
                     "icon": "<i class='mdui-list-item-avatar mdui-icon material-icons mdui-color-teal'>web</i>"
                 },
