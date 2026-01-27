@@ -43,7 +43,7 @@ function ajaxGet(url, successCallback, errorCallback) {
 }
 
 // 安全更新元素内容
-function safeUpdateElement(elementId, content) {
+function safeUpdateElement(elementId, content, useHTML) {
     var element = document.getElementById(elementId);
     if (element) {
         // 移除加载动画
@@ -51,9 +51,11 @@ function safeUpdateElement(elementId, content) {
         if (spinner && spinner.className.indexOf('mdui-spinner') !== -1) {
             element.removeChild(spinner);
         }
-        
-        // 更新文本内容
-        if (element.innerText !== undefined) {
+
+        // 更新内容
+        if (useHTML) {
+            element.innerHTML = content; // 支持 HTML 标签
+        } else if (element.innerText !== undefined) {
             element.innerText = content; // IE
         } else {
             element.textContent = content; // 标准浏览器

@@ -131,7 +131,7 @@ function createMirrorSiteCard(mirrorData, isCurrent) {
             '<div class="mdui-card-primary-subtitle"></div>') +
         '</div>' +
         '<div class="mdui-card-content mdui-typo">' +
-        '<p>当前 IP: ' + mirrorData.ip + '<br>' +
+        '<p>当前地址: ' + mirrorData.ip + '<br>' +
         '服务时间： ' + mirrorData.serviceTime + '<br>' +
         '位置：' + mirrorData.location +
         '</p>' +
