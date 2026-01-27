@@ -5,14 +5,14 @@
     },
     "notification": {
         "enabled": true,
-        "message": "本站仅用于局域网连通性测试，请勿在学校用网的高峰时段访问。"
+        "message": "本站仅用于局域网连通性测试，请勿在学校用网的高峰时段访问。<br>最近正在考虑将校内的 FileCenter 服务端口改为 72。"
     },
     "lastUpdate": {
-        "date": "2025年11月2日",
-        "version": "2.0.1a",
-        "description": "全部改为IE兼容的老js代码，测试IE兼容性"
+        "date": "2026年1月27日",
+        "version": "2.0.2",
+        "description": "见 GitHub"
     },
     "copyright": {
-        "text": "©Copyright by Nick_DL 2022-2025. All rights reserved."
+        "text": "©Copyright by Nick_DL 2022-2026. All rights reserved."
 }
 }

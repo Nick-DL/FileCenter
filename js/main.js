@@ -64,7 +64,7 @@ function updatePageContent(basicInfo, mirrorSiteInfo) {
 
     if (notificationCard && noticeInfo) {
         if (basicInfo.notification.enabled) {
-            noticeInfo.textContent = basicInfo.notification.message;
+            noticeInfo.innerHTML = basicInfo.notification.message;  // 改为 innerHTML 以支持 HTML 标签
             notificationCard.classList.remove('hidden');
         } else {
             notificationCard.classList.add('hidden');

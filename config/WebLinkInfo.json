@@ -6,13 +6,13 @@
                 {
                     "name": "校园电视台",
                     "url": "http://10.37.2.110",
-                    "description": "新闻周刊首选",
+                    "description": "校园新闻首选",
                     "icon": "<i class='mdui-list-item-avatar mdui-icon material-icons mdui-color-red-accent'>web</i>"
                 },
                 {
                     "name": "微课录播平台",
                     "url": "http://10.37.122.2",
-                    "description": "新闻周刊备选",
+                    "description": "校园新闻备选",
                     "icon": "<i class='mdui-list-item-avatar mdui-icon material-icons mdui-color-indigo-accent'>web</i>"
                 },
                 {
@@ -43,6 +43,12 @@
                     "url": "https://new.nickdl.site",
                     "description": "蓝星拾光站",
                     "icon": "<i class='mdui-list-item-avatar mdui-color-indigo-50'><img src='/img/ndw.svg'></i>"
+                },
+                {
+                    "name": "玩转数字绵中",
+                    "url": "https://dgmz.nickdl.site",
+                    "description": "",
+                    "icon": "<i class='mdui-list-item-avatar mdui-icon material-icons mdui-color-red-accent'>lightbulb_outline</i>"
                 },
                 {
                     "name": "绵阳中学 Wiki",

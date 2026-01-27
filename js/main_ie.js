@@ -141,7 +141,7 @@ function updatePageContent(basicInfo, mirrorSiteInfo) {
     
     if (notificationCard && noticeInfo) {
         if (basicInfo.notification.enabled) {
-            safeUpdateElement('noticeInfo', basicInfo.notification.message);
+            safeUpdateElement('noticeInfo', basicInfo.notification.message, true);  // 添加 true 参数以支持 HTML
             removeClass(notificationCard, 'hidden');
         } else {
             addClass(notificationCard, 'hidden');
