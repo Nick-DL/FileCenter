@@ -113,7 +113,7 @@
           <div class="intro mdui-typo">
             <p></p>
             <p></p>
-            <p>镜像站信息更新时间: <span id="MirrorSiteUpdateTime">2025年10月2日</span></p>
+            <p>镜像站信息更新时间: <span id="MirrorSiteUpdateTime">加载中</span></p>
             <p><span id="noticeInfo"></span></p>
             <p><span id="copyrightInfo">加载中</span></p>
             <p></p>
@@ -123,8 +123,11 @@
     </div>
   </div>
   <script src="/js/mdui.min.js"></script>
-  <script src="/js/main.js"></script>
-  <script src="/js/MirrorSite.js">  </script>
+  <!--[if IE]>
+    <script src="/js/json3.min.js"></script>
+  <![endif]-->
+    <script src="/js/main_ie.js"></script>
+    <script src="/js/MirrorSite_ie.js">  </script>
 </body>
 
 </html>
