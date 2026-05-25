@@ -1,6 +1,16 @@
 ﻿{
-    "infoUpdate": "2026年1月26日",
+    "infoUpdate": "2026年5月25日",
     "mirrors": [
+        {
+            "name": "旗舰站",
+            "id": "114514",
+            "ip": "10.37.2.30:72",
+            "location": "山下校区远志楼",
+            "serviceTime": "7 * 24 h",
+            "status": "active",
+            "remark": "支持 HTTPS 连接 (端口: 372)",
+            "priority": 1
+        },
         {
             "name": "一号站",
             "id": "1",
@@ -9,7 +19,7 @@
             "serviceTime": "每天 07:15 - 21:50",
             "status": "active",
             "remark": "暂停维护",
-            "priority": 1
+            "priority": 4
         },
         {
             "name": "二号站",
@@ -29,6 +39,16 @@
             "serviceTime": "每天 06:30 - 22:30",
             "status": "active",
             "remark": "备用站点",
+            "priority": 3
+        },
+        {
+            "name": "三号站",
+            "id": "3",
+            "ip": "10.37.121.11:72",
+            "location": "山上校区远翔楼",
+            "serviceTime": "每天 06:30 - 22:30",
+            "status": "active",
+            "remark": "这是三号站的备用地址",
             "priority": 3
         },
         {
