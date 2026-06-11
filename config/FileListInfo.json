@@ -6,6 +6,19 @@
                 {
                     "name": "(示例) 清除浏览器缓存、SW",
                     "path": "/file/RemovingCache&SWScripts"
+                },
+                {
+                    "name": "(示例) 浏览器脚本兼容性检测",
+                    "path": "/file/LoaderDetect"
+                }
+            ]
+        },
+        {
+            "name": "FileCenter 功能测试",
+            "files": [
+                {
+                    "name": "目录浏览页模板",
+                    "path": "/file/DirectoryTemplate"
                 }
             ]
         }
